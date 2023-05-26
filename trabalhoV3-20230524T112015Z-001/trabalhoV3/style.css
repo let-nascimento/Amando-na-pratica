@@ -1,86 +1,27 @@
 * {
-padding:0;
-margin:0;
-vertical-align:baseline;
-list-style:none;
-border:0;
+  padding:0;
+  margin:0;
+  vertical-align:baseline;
+  list-style:none;
+  border:0;
 }
 
-body{
+body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.wrapper{
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.wrapper > *{
-  padding: 20px;
-}
-
-header{
-  background-color: black;
+footer {
   color: white;
+  background-color: black;
+  justify-content: center;
+  margin:0;
   padding: 10px;
 }
 
-header .container{
+footer p {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.page-main{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 350px;
-}
-
-.page-main div{
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.break{
-  max-width: none;
-  color: white;
-  background-color: black;
-  justify-content: center;
-  margin:0;
-  padding: 7px;
-}
-
-footer{
-  color: white;
-  background-color: black;
-  justify-content: center;
-  margin:0;
-  padding: 7px;
-}
-
-footer p{
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#ong{
-  margin-right: 200px;
-  font-family:'DM Serif Text', serif;
-  font-size: 40px;
-}
-
-.pacifico{
-  font-family: 'Pacifico' ;
-  font-size: 30px;
-}
-
-.container{
-  display: flex;
 }
 
 a {
@@ -88,9 +29,67 @@ a {
   color: inherit;
 }
 
-.titulos_h{
-  margin: 10px;
- 
+li {
+  list-style-type: disc;
+}
+
+.pacifico {
+  font-family: 'Pacifico' ;
+  font-size: 30px;
+}
+
+.wrapper > * {
+  padding: 20px;
+}
+
+.page-header {
+  background-color: black;
+  color: white;
+}
+
+.page-header .container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.page-main {
+  display: flex;
+  flex-direction: column;
+  min-height: 350px;
+}
+
+.page-main div {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.break {
+  display: flex;
+  flex-direction: column;
+  min-height: 350px;
+  color: white;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.container-imagens {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(1, minmax(300px, 1fr));
+  grid-template-rows: repeat(3, minmax(450px, 1fr));
+  grid-gap: 20px;
+}
+  
+.titulos_h {
+  margin: 10px; 
 }
 
 .texto {
@@ -98,75 +97,23 @@ a {
   margin-top: 20px;
 }
 
-#objetivo {
-  background-color: black;
-  color: white;
-  max-width: 1280px;
-  padding-left: 90px;
-  margin: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-li{
-  list-style-type: disc;
-}
-
-.pg_link{
-  /*background-color: grey;*/
-  width: 400px;
-  height: 600px;
-  margin : 20px;
-  margin-top: 0;
+.pg_link {
+  width: 80vw;
+  height: 450px;
   border-radius: 30px;
   transition: width 0.3s, height 0.3s;
 }
 
 .pg_link:hover {
-  width: 420px;
-  height: 630px;
+  width: 85vw;
+  height: 472px;
 }
 
-.fotosDeFundo{
-  display: grid;
-  place-items: center;
-  margin-top: 20px;
+.ft-redondas {
+  border-radius: 50%;
 }
 
-#foto_hist{
-  background-image:url(/img/foto_casa.PNG);
-  transition: 0.3s;
-}
-
-#foto_hist:hover{
-  background-image:url(/img/foto_casa_cor.PNG);
-}
-
-#foto_ajuda{
-  background-image:url(/img/foto_ajuda.PNG);
-  transition: 0.3s;
-}
-
-#foto_galeria{
-  background-image:url(/img/foto_galeria.PNG);
-  transition: 0.5s;
-}
-
-#foto_galeria:hover{
-  background-image:url(/img/foto_galeria_cor.PNG);
-}
-
-#pgHist_img {
-  width: 400px;
-  height: 600px;
-  border-radius: 10px;
-}
-
-.ft-redondas{
- border-radius: 50%;
-}
-
-.corpoh2{
+.corpoh2 {
   color:white;
   position: relative;
   align-items: center;
@@ -174,11 +121,7 @@ li{
   text-align: center; 
 }
 
-#processo{
-  margin-left: 25%;
-}
-
-.formulario{
+.formulario {
   background-color: gray;
   border-radius: 10px;
   margin: auto;
@@ -191,11 +134,121 @@ li{
   margin : 10px;
 } 
 
-@media screen and (min-width: 768px){
-  .page-header{
-    padding-left: 90px;
+.centralizar {
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centralizar .container {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(1, minmax(300px, 300px));
+}
+
+#ong {
+  margin-right: 200px;
+  font-family:'DM Serif Text', serif;
+  font-size: 40px;
+}
+
+#objetivo {
+  background-color: black;
+  color: white;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+#foto_hist {
+  background-image:url(/img/foto_casa.PNG);
+  transition: 0.3s;
+}
+
+#foto_hist:hover {
+  background-image:url(/img/foto_casa_cor.PNG);
+}
+
+#foto_ajuda {
+  background-image:url(/img/foto_ajuda.PNG);
+  transition: 0.3s;
+}
+
+#foto_galeria {
+  background-image:url(/img/foto_galeria.PNG);
+  transition: 0.5s;
+}
+
+#foto_galeria:hover {
+  background-image:url(/img/foto_galeria_cor.PNG);
+}
+
+#pgHist_img {
+  width: 400px;
+  height: 600px;
+  border-radius: 10px;
+}
+
+#processo {
+  width: 100vw;
+}
+
+@media screen and (min-width: 768px) {
+  .page-header {
+    padding-left: 80px;
+    padding-right: 80px;
   }
-  .page-main{
-    padding-left: 90px;
+  .page-main {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  
+  .pg_link {
+    width: 400px;
+    height: 600px;
+    border-radius: 30px;
+    transition: width 0.3s, height 0.3s;
+  }
+  
+  .pg_link:hover {
+    width: 420px;
+    height: 630px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container-imagens {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(600px, 1fr));
+    grid-gap: 10px;
+  }
+
+  .centralizar .container {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, minmax(300px, 300px));
+  }
+
+  .pg_link {
+    width: 400px;
+    height: 600px;
+    border-radius: 30px;
+    transition: width 0.3s, height 0.3s;
+  }
+  
+  .pg_link:hover {
+    width: 420px;
+    height: 630px;
+  }
+
+  #processo {
+    width: 40vw;
   }
 }
