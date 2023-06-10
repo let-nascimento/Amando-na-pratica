@@ -83,9 +83,25 @@ li {
 .container-imagens {
   display: grid;
   place-items: center;
+  align-items: center;
   grid-template-columns: repeat(1, minmax(300px, 1fr));
   grid-template-rows: repeat(3, minmax(450px, 1fr));
   grid-gap: 20px;
+}
+
+.container-coordenadores {
+  display: grid;
+  place-items: start;
+  grid-template-columns: repeat(1, minmax(100px, 1fr));
+  grid-template-rows: repeat(3, minmax(100px, 1fr));
+  grid-gap: 20px;
+}
+
+.sub-container div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
   
 .titulos_h {
@@ -143,7 +159,11 @@ li {
 .centralizar .container {
   display: grid;
   place-items: center;
-  grid-template-columns: repeat(1, minmax(300px, 300px));
+  grid-template-columns: repeat(1, minmax(100px, 450px));
+}
+
+.centralizar .container div {
+  display: flex;
 }
 
 #ong {
@@ -230,10 +250,18 @@ li {
     grid-gap: 10px;
   }
 
+  .container-coordenadores {
+    display: grid;
+    place-items: start;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 10px;
+  }
+
   .centralizar .container {
-  display: grid;
-  place-items: center;
-  grid-template-columns: repeat(2, minmax(300px, 300px));
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, minmax(300px, 400px));
   }
 
   .pg_link {
