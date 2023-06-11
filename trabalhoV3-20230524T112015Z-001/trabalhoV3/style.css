@@ -42,17 +42,10 @@ li {
   padding: 20px;
 }
 
-footer p {
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .page-header {
   background-color: white;
   color: white;
 }
-
 
 .page-header .container {
   max-width: 1280px;
@@ -192,6 +185,7 @@ footer p {
 
 #foto_galeria:hover {
   background-image:url(img/foto_galeria_cor.PNG);
+<<<<<<< HEAD
 }
 
 li {
@@ -461,6 +455,8 @@ li {
 
 #foto_galeria:hover {
   background-image:url(/img/foto_galeria_cor.PNG);
+=======
+>>>>>>> 1dbc39f9265a91a752ff48bd68de7a080030f156
 }
 
 #pgHist_img {
@@ -530,4 +526,65 @@ li {
   #processo {
     width: 40vw;
   }
+<<<<<<< HEAD
+=======
+}
+
+.nav__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.desktop__nav ul {
+  display: none;
+}
+
+.desktop__nav ul {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  margin-right: 40px;
+}
+
+.desktop__nav ul li {
+  font-family: 'Barlow', serif;
+  font-size: 15px;
+  color: black;
+  transition: all 0.4s ease-in-out;
+  list-style: none;
+}
+
+.desktop__nav ul li:hover {
+  transform: scale(1.05);
+}
+
+.desktop__nav ul li.contact {
+  background-color: hsl(0, 0%, 0%);
+  padding: 16px;
+  font-size: 14px;
+  border-radius: 100px;
+  font-family: 'Fraunces';
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.desktop__nav ul li.contact:hover {
+  background-color: white;
+  color: black;
+}
+
+.nav_texto {
+  font-family: 'Sacramento';
+  font-size: 50px;
+  color: black;
+}
+
+.gif {
+  text-align: center;
+ padding: 15px;
+>>>>>>> 1dbc39f9265a91a752ff48bd68de7a080030f156
 }
