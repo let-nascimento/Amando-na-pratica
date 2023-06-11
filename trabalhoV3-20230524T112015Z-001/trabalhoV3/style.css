@@ -187,275 +187,6 @@ li {
   background-image:url(img/foto_galeria_cor.PNG);
 }
 
-li {
-  list-style-type: disc;
-}
-
-.pacifico {
-  font-family: 'Pacifico' ;
-  font-size: 30px;
-}
-
-.wrapper > * {
-  padding: 20px;
-}
-
-.page-header {
-  background-color: black;
-  color: white;
-}
-
-.page-header .container {
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
-}
-
-.page-main {
-  display: flex;
-  flex-direction: column;
-  min-height: 350px;
-}
-
-.page-main div {
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.break {
-  display: flex;
-  flex-direction: column;
-  min-height: 350px;
-  color: white;
-  background-color: black;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  display: flex;
-}
-
-.container-imagens {
-  display: grid;
-  place-items: center;
-  grid-template-columns: repeat(1, minmax(300px, 1fr));
-  grid-template-rows: repeat(3, minmax(450px, 1fr));
-  grid-gap: 20px;
-}
-  
-.titulos_h {
-  margin: 10px; 
-}
-
-.texto {
-  margin: 50px;
-  margin-top: 20px;
-}
-
-.pg_link {
-  width: 80vw;
-  height: 450px;
-  border-radius: 30px;
-  transition: width 0.3s, height 0.3s;
-}
-
-.pg_link:hover {
-  width: 85vw;
-  height: 472px;
-}
-
-#processo {
-  width: 100vw;
-}
-
-@media screen and (min-width: 768px) {
-  .page-header {
-    padding-left: 80px;
-    padding-right: 80px;
-  }
-  .page-main {
-    padding-left: 80px;
-    padding-right: 80px;
-  }
-  .container {
-    padding-left: 80px;
-    padding-right: 80px;
-  }
-  
-  .pg_link {
-    width: 400px;
-    height: 600px;
-    border-radius: 30px;
-    transition: width 0.3s, height 0.3s;
-  }
-  
-  .pg_link:hover {
-    width: 420px;
-    height: 630px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .container-imagens {
-    display: grid;
-    place-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(600px, 1fr));
-    grid-gap: 10px;
-  }
-
-  .centralizar .container {
-  display: grid;
-  place-items: center;
-  grid-template-columns: repeat(2, minmax(300px, 300px));
-  }
-
-  .pg_link {
-    width: 400px;
-    height: 600px;
-    border-radius: 30px;
-    transition: width 0.3s, height 0.3s;
-  }
-  
-  .pg_link:hover {
-    width: 420px;
-    height: 630px;
-  }
-
-  #processo {
-    width: 40vw;
-  }
-}
-
-.nav__bar {
-  display: flex;
-}
-
-.ft-redondas {
-  border-radius: 50%;
-}
-
-.corpoh2 {
-  color:white;
-  position: relative;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-}
-
-
-.desktop__nav ul {
-  display: none;
-}
-
-.desktop__nav ul {
-  display: flex;
-  align-items: center;
-  gap: 48px;
-  margin-right: 40px;
-}
-
-.formulario {
-  background-color: gray;
-  border-radius: 10px;
-  margin: auto;
-  height: 200px;
-  width: 300px;
-}
-
-.desktop__nav ul li {
-  font-family: 'Barlow', serif;
-  font-size: 15px;
-  color: black;
-  transition: all 0.4s ease-in-out;
-  list-style: none;
-}
-
-.desktop__nav ul li:hover {
-  transform: scale(1.05);
-}
-
-.desktop__nav ul li.contact {
-  background-color: hsl(0, 0%, 0%);
-  padding: 16px;
-  font-size: 14px;
-  border-radius: 100px;
-  font-family: 'Fraunces';
-  font-weight: 700;
-  text-transform: uppercase;
-  color: white;
-  transition: all 0.2s ease-in-out;
-}
-
-.desktop__nav ul li.contact:hover {
-  background-color: white;
-  color: black;
-}
-
-.nav_texto {
-  font-family: 'Sacramento';
-  font-size: 50px;
-  color: black;
-}
-
-.gif {
-  text-align: center;
- padding: 15px;
-}
-
-.centralizar {
-  padding: 10px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.centralizar .container {
-  display: grid;
-  place-items: center;
-  grid-template-columns: repeat(1, minmax(300px, 300px));
-}
-
-#ong {
-  margin-right: 200px;
-  font-family:'DM Serif Text', serif;
-  font-size: 40px;
-}
-
-#objetivo {
-  background-color: black;
-  color: white;
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
-}
-
-#foto_hist {
-  background-image:url(/img/foto_casa.PNG);
-  transition: 0.3s;
-}
-
-#foto_hist:hover {
-  background-image:url(/img/foto_casa_cor.PNG);
-}
-
-#foto_ajuda {
-  background-image:url(/img/foto_ajuda.PNG);
-  transition: 0.3s;
-}
-
-#foto_galeria {
-  background-image:url(/img/foto_galeria.PNG);
-  transition: 0.5s;
-}
-
-#foto_galeria:hover {
-  background-image:url(/img/foto_galeria_cor.PNG);
-}
-
 #pgHist_img {
   width: 400px;
   height: 600px;
@@ -523,4 +254,62 @@ li {
   #processo {
     width: 40vw;
   }
+}
+
+.nav__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.desktop__nav ul {
+  display: none;
+}
+
+.desktop__nav ul {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  margin-right: 40px;
+}
+
+.desktop__nav ul li {
+  font-family: 'Barlow', serif;
+  font-size: 15px;
+  color: black;
+  transition: all 0.4s ease-in-out;
+  list-style: none;
+}
+
+.desktop__nav ul li:hover {
+  transform: scale(1.05);
+}
+
+.desktop__nav ul li.contact {
+  background-color: hsl(0, 0%, 0%);
+  padding: 16px;
+  font-size: 14px;
+  border-radius: 100px;
+  font-family: 'Fraunces';
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.desktop__nav ul li.contact:hover {
+  background-color: white;
+  color: black;
+}
+
+.nav_texto {
+  font-family: 'Sacramento';
+  font-size: 50px;
+  color: black;
+}
+
+.gif {
+  text-align: center;
+ padding: 15px;
 }
