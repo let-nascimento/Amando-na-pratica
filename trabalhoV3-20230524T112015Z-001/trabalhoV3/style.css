@@ -192,6 +192,8 @@ footer p {
 
 #foto_galeria:hover {
   background-image:url(img/foto_galeria_cor.PNG);
+}
+
 li {
   list-style-type: disc;
 }
@@ -337,6 +339,8 @@ li {
 
 .nav__bar {
   display: flex;
+}
+
 .ft-redondas {
   border-radius: 50%;
 }
@@ -359,6 +363,7 @@ li {
   align-items: center;
   gap: 48px;
   margin-right: 40px;
+}
 
 .formulario {
   background-color: gray;
@@ -406,6 +411,8 @@ li {
 .gif {
   text-align: center;
  padding: 15px;
+}
+
 .centralizar {
   padding: 10px;
   margin-left: auto;
@@ -523,3 +530,4 @@ li {
   #processo {
     width: 40vw;
   }
+}
