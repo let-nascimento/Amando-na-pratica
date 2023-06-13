@@ -47,16 +47,50 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam laoreet iaculis dolor in tristique. Integer commodo urna dui, at dapibus diam placerat fermentum. Nullam eget blandit justo. Suspendisse id dignissim urna. Nulla porta lectus ac orci efficitur, a faucibus nisi ultrices. Suspendisse eleifend purus nec bibendum commodo. Vestibulum mollis ac est sed commodo. Praesent in eros sodales, convallis erat sed, tincidunt sapien. In hac habitasse platea dictumst. Donec tempor pretium sem, eu vulputate mauris placerat sit amet. Nam placerat vestibulum elit, in molestie augue eleifend sit amet. Ut et ipsum tempus, malesuada libero eu, consequat justo. Interdum et malesuada fames ac ante ipsum primis in faucibus.
           </p>
         </div>
-        <div class="formulario">
-          <form>
-            <h3>Escreva-nos um E-mail</h3>
-            <input type="text" placeholder="Digite seu nome" class="input_form">
-            <input taype="email" placeholder="Digite seu E-mail" class="input_form">
-            <input type="text" placeholder="Digite o tema do E-mail" class="input_form">
-            <textarea class="input_form" placeholder="Escreva aqui"></textarea>
-            <button>Enviar</button>
-          </form>
-        </div>
+       <section id="contato";>
+              <h2>Entre em contato</h2>
+              <form method="post" action="">
+                <div class="linha">
+                  <div>
+                  <label for="nome">Nome <span class="asterisco">*</span></label>
+                <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                </div>
+               
+                <div>
+                    <label for="celular">Celular <span class="asterisco">*</span></label>
+                <input id="celular" name="celular" type="tel" placeholder="123456789" required>
+                </div>
+                 
+                </div>
+               
+                <div class="linha">
+                <div>
+                   <label for="email">Email <span class="asterisco">*</span></label>
+                <input id="email" type="email" name="email" placeholder="demonstração@email.com" required>
+                </div>
+               
+                <div>
+                  <label for="assunto">Assunto <span class="asterisco">*</span></label>
+                <select id="assunto" name="assunto" required>
+                  <option selected disabled>Selecionar assunto</option>
+                  <option>Quero ser patrocinador</option>
+                  <option>Quero ser doador</option>
+                  <option>Quero ser voluntário</option>
+                  <option>Outro</option>
+                </select>
+                  </div>
+                </div>
+                <label for="mensagem">Mensagem <span class="asterisco">*</span></label>
+                <textarea id="mensagem" name="mensagem" rows="10" placeholder="Digite sua mensagem aqui" required></textarea>
+               
+                <div class="linha">
+                  <span><span class="asterisco">*</span>campo obrigatório</span>
+                  <button>
+                  Enviar
+                </button>
+                </div>
+              </form>
+            </section>
         <p>Redes sociais, contatos e formulários</p>
       </main>
       <footer>
