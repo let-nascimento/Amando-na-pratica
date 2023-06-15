@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+    rel="icon"
+    type="image/PNG"
+    sizes="32x32"
+    href="img/logo.PNG"/>
+
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css2?family=Barlow:wght@500;600&family=Fraunces:wght@700;900&display=swap' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Amando na Prática | Como ajudar?</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="page-header">
+        <div class="nav__bar">
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <img src="img/bars-solid.png" width="30" height="30">
+          </label>
+          <label class="nav_texto"><a href="index.html">Amando na Prática</label></a>
+          <nav class="desktop__nav">
+            <ul>
+              <li><a class="nav-link" href="historia.html">NOSSA HISTÓRIA</a></li>
+              <li><a a class="nav-link" href="galeria.html">GALERIA</a></li>
+              <li class="contact"><a class="nav-link" href="ajuda.html">TRANSFORME VIDAS</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="page-main">
+        <div>
+          <h1 class="titulos_h">Como posso ajudar?</h1>
+        </div>
+        <div class="texto">
+          <p>
+           <b>Existem diversas formas de contribuir com o nosso trabalho e nossa missão, algumas delas são:</b> 
+          </p>
+          <ul>
+            <li>Divulgação</li>
+            <li>Doação de alimentos</li>
+            <li>Doação de brinquedos e vestimentos</li>
+            <li>Contribuição financeira</li>
+          </ul>
+        </div>
+       <section id="contato">
+              <h2>Se interessou? Entre em contato</h2>
+              <form method="post" action="">
+                <div class="linha">
+                  <div>
+                  <label for="nome">Nome <span class="asterisco">*</span></label>
+                <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                </div>
+               
+                <div>
+                    <label for="celular">Celular <span class="asterisco">*</span></label>
+                <input id="celular" name="celular" type="tel" placeholder="123456789" required>
+                </div>
+                 
+                </div>
+               
+                <div class="linha">
+                <div>
+                   <label for="email">Email <span class="asterisco">*</span></label>
+                <input id="email" type="email" name="email" placeholder="demonstração@email.com" required>
+                </div>
+               
+                <div>
+                  <label for="assunto">Assunto <span class="asterisco">*</span></label>
+                <select id="assunto" name="assunto" required>
+                  <option selected disabled>Selecionar assunto</option>
+                  <option>Quero ser patrocinador</option>
+                  <option>Quero ser doador</option>
+                  <option>Quero ser voluntário</option>
+                  <option>Outro</option>
+                </select>
+                  </div>
+                </div>
+                <div class="msg">
+                <label for="mensagem">Mensagem <span class="asterisco">*</span></label>
+                <textarea id="mensagem" name="mensagem" rows="10" placeholder="Digite sua mensagem aqui" required></textarea>
+                </div>
+                <div class="linha">
+                  <span><span class="asterisco">*</span>campo obrigatório</span>
+                  <button>
+                  Enviar
+                </button>
+                </div>
+              </form>
+              <br>
+              <br>
+              <a href="https://www.instagram.com/amandonapratica/"><img style="width: 70px; height: 70px;" src="img/instagram.png"></a>
+            </section>
+      </main>
+      <footer>
+        <p>&copy;Amando na prática</p>
+      </footer>
+    </div>
+  </body>
+</html>
